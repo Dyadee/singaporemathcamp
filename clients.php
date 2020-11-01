@@ -15,7 +15,7 @@
 <body>
 
     <?php
-        require_once("connection.php");
+        require_once("connection_prod.php");
         $result = $mysqli->query("SELECT * FROM clients ORDER BY schedule") or die($mysqli->error);
 
   ?>
