@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Singapore Math Camp</title>
+    <title>Singapore Math Camp - Clients</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,10 +14,35 @@
 
 <body>
 
-    <?php require_once("register.php")?>
-    <?php require_once("navigation.php")?>
-    
-    <?php require_once("form.php")?>
+    <?php
+        require_once("connection.php");
+        $result = $mysqli->query("SELECT * FROM clients ORDER BY schedule") or die($mysqli->error);
+
+  ?>
+  <?php require_once("navigation.php")?>
+
+    <div class="container">
+    <div class="row justify-content-center">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Schedule</th>
+                </tr>
+            </thead>
+            <?php while($row = $result->fetch_assoc()): ?>
+                <tr>
+                    <td><?php echo $row['lastname']?></td>
+                    <td><?php echo $row['firstname']?></td>
+                    <td><?php echo $row['schedule']?></td>        
+                </tr>
+            <?php endwhile;?>
+
+        </table>
+
+    </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

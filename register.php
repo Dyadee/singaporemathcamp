@@ -11,6 +11,8 @@ if(isset($_POST['register'])){
 
     $mysqli -> query("INSERT INTO clients (lastname, firstname, schedule) VALUES ('$lastname', '$firstname', '$datetime') ") or 
        die($mysqli->error);
+
+    header("location: clients.php");
 }
  
 ?>
