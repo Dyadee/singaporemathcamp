@@ -26,11 +26,11 @@
                 <input type="text" name="firstname" class="form-control" value="Enter your First Name">
             </div>
             <div class="form-group">
-                <label for="birthdaytime">Schedule:</label>
-                <input type="datetime-local" id="birthdaytime" name="birthdaytime" class="form-control">
+                <label for="schedule">Schedule:</label>
+                <input type="datetime-local" id="schedule" name="schedule" class="form-control">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" name="register" class="btn btn-primary">Register</button>
             </div>
         </form>
     </div>
