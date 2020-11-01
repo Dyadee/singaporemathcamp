@@ -13,9 +13,10 @@
 </head>
 
 <body>
+<?php require_once("register.php")?>
     <div class="row justify-content-center">
 
-        <form action="process.php" method="POST">
+        <form action="register.php" method="POST">
             <div class="form-group">
                 <label for="lastname">Last Name</label>
                 <input type="text" name="lastname" class="form-control" value="Enter your Last Name">
