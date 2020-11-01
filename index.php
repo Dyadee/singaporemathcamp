@@ -16,7 +16,6 @@
 
     <?php require_once("register.php")?>
     <?php require_once("navigation.php")?>
-    
     <?php require_once("form.php")?>
 
     <!-- Optional JavaScript -->
