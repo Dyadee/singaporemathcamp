@@ -1,6 +1,6 @@
 <?php
 
-require_once("connection.php");
+require_once("connection_prod.php");
 
 if(isset($_POST['register'])){
     $lastname = $_POST['lastname'];
