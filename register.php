@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli('localhost', 'root', 'root', 'singaporemathcamp') or die(mysql_error($mysqli));
+require_once("connection.php");
 
 if(isset($_POST['register'])){
     $lastname = $_POST['lastname'];
